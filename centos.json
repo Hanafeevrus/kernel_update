@@ -69,7 +69,7 @@
         "{{user `image_name`}}" : {
           "scripts" :
             [
-              "scripts/stage-1-kernel-update.sh",
+              "scripts/stage-3.sh",
               "scripts/stage-2-clean.sh"
             ]
         }
