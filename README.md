@@ -1,6 +1,6 @@
    ## kernel_update_lesson1
    ## 1. сборка ядра 5.2.21 с исходника
-  #### Packer'ом провижиним скрипт stage-3.sh с командами:
+  #### Packer'ом провижиним скрипт `stage-3.sh` с командами:
   ##### !/bin/bash
     ####устанавливаем компоненты и утилиты
     yum install -y ncurses-devel make gcc bc bison flex elfutils-libelf-devel openssl-devel grub2 perl wget tar
@@ -26,7 +26,7 @@
     
  ## 2. сборка duild
  #### перейти в директорию packer и в ней выполнить команду:
-  packer build centos.json
+  `packer build centos.json`
  #### публикуем релиз
       vagrant cloud auth login
       vagrant cloud publish --release <username>/centos-7-5 1.0 virtualbox \
